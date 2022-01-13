@@ -47,7 +47,7 @@ main {
 
     h1 {
       font-size: 4rem;
-      color: rgb(30, 129, 176);
+      color: rgb(196, 63, 63);
     }
     p {
       font-size: 1.5rem;
@@ -58,7 +58,7 @@ main {
     flex: 1 1 550px;
     position: relative;
     img {
-      border-radius: 50%;
+      border-radius: 70%;
       width: 25vw;
       height: 25vw;
 
@@ -74,13 +74,13 @@ main {
     table {
       border-collapse: collapse;
       tr {
-        border-bottom: 1px solid rgb(30, 129, 176);
+        border-bottom: 1px solid rgb(202, 115, 144);
         transition: all 0.2s ease;
         td {
           padding: 1rem;
         }
         &:hover {
-          background-color: rgba(30, 130, 176, 0.25);
+          background-color: rgba(176, 30, 62, 0.25);
         }
       }
     }
@@ -94,7 +94,7 @@ main {
     div.blueRect {
       width: 30vw;
       height: 75vh;
-      background-color: rgb(30, 129, 176);
+      background-color: rgb(176, 30, 54);
       position: absolute;
       top: 30px;
       left: 50px;
@@ -117,7 +117,7 @@ main {
         }
         input,
         textarea {
-          background-color: rgba(30, 130, 176, 0.25);
+          background-color: rgba(176, 30, 30, 0.25);
           color: black;
           font-size: 1.25rem;
           padding: 0.25rem 0.25rem;
@@ -130,7 +130,7 @@ main {
       }
       button {
         align-self: center;
-        background-color: rgb(30, 130, 176);
+        background-color: rgb(204, 82, 82);
         color: white;
         border: none;
         cursor: pointer;
@@ -142,7 +142,7 @@ main {
   }
 
   div.line {
-    background-color: rgb(30, 130, 176);
+    background-color: rgb(176, 30, 30);
     width: 5px;
   }
 

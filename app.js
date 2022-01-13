@@ -41,3 +41,8 @@ lastWord.addEventListener("animationend", () => {
   animation.style = "transition: all 1s ease; opacity: 0; pointer-events: none;";
 })
 
+var $loading = $('#loading')
+var $progress = $('#progress')
+window.onload = () => {
+$loading.hide()
+}
