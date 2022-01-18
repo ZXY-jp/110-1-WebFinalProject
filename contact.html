@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Wilson Ren" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="哈囉，我是Pei"
-    />
-    <title>聯絡方式 | Chihuah</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style_CON.css" />
-  </head>
-  <body>
-    <!--header and navbar-->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">首頁</a></li>
-          <li><a href="resume.html">我的履歷</a></li>
-          <li><a class="active" href="#">聯絡方式</a></li>
-          <li><a href="./first_project/index.html">網頁成果1</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section class="form">
-        <form>
-          <div>
-            <label for="name">姓名:</label>
-            <input type="text" name="name" />
-          </div>
-          <div>
-            <label for="email">郵件:</label>
-            <input type="email" name="email" />
-          </div>
-          <div>
-            <label for="phone">電話:</label>
-            <input type="text" name="phone" />
-          </div>
-          <div>
-            <label for="question">問題詢問:</label>
-            <textarea name="question" id="question" rows="8"></textarea>
-          </div>
-          <button type="submit">提交表單</button>
-        </form>
-      </section>
-      <div class="line"></div>
-      <section class="contact">
-        <div class="content">
-          <h2>辦公室: SF212</h2>
-          <h2>Tel: 02-29052928</h2>
-          <h2>Email: 152273@gapp.fju.edu.tw</h2>
-          <h2>Office hour: 周三下午兩點到五點</h2>
-          <h2>其他聯絡方式: 臉書、IG</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Wilson Ren" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="哈囉，我是Pei" />
+  <title>聯絡方式 | Chihuah</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- 會滾動的 bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.6.1.min.js"></script>
+
+  <link rel="stylesheet" href="./styles/style_CON.css" />
+</head>
+
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Pictures/header.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./Pictures/header02.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./Pictures/header03.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--header and navbar-->
+  <header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#">首頁</a></li>
+        <li><a href="resume.html">個人履歷</a></li>
+        <li><a href="contact.html">聯絡方式</a></li>
+        <li><a href="./first_project/index.html">網頁成果</a></li>
+        <li><a href="./OOXX/index.html">自製小遊戲01</a></li>
+        <li><a href="./punch/index.html">自製小遊戲02</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form">
+      <form>
+        <div>
+          <label for="name">姓名:</label>
+          <input type="text" name="name" />
         </div>
-      </section>
-    </main>
+        <div>
+          <label for="email">郵件:</label>
+          <input type="email" name="email" />
+        </div>
+        <div>
+          <label for="phone">電話:</label>
+          <input type="text" name="phone" />
+        </div>
+        <div>
+          <label for="question">問題詢問:</label>
+          <textarea name="question" id="question" rows="8"></textarea>
+        </div>
+        <button type="submit">提交表單</button>
+      </form>
+    </section>
+    <div class="line"></div>
+    <section class="contact">
+      <div class="content">
+        <h2>常駐SF643</h2>
+        <h2>Tel: 09XXXXXXXX</h2>
+        <h2>Email: 407261221@gapp.fju.edu.tw</h2>
+        <h2>其他聯絡方式: 郵件</h2>
+      </div>
+    </section>
+  </main>
+</body>
 
-    <!--links for facebook, instagram and youtube-->
-    <footer>
-      <a href="https://www.facebook.com/chihua.tung"
-        ><img src="./ICONS/facebook.svg" alt="facebook" title="facebook page"
-      /></a>
-      <a href="https://www.instagram.com/chihuah/">
-        <img
-          src="./ICONS/instagram.svg"
-          alt="instagram"
-          title="instagram page"
-        /></a>
-      <a href="https://www.youtube.com/">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGc+PHBhdGggZD0iTTE1NC44LDEyMS40NzVjLTEuNDMzMzMsNy41MjUgLTcuNTI1LDEzLjI1ODMzIC0xNS4wNSwxNC4zMzMzM2MtMTEuODI1LDEuNzkxNjcgLTMxLjUzMzMzLDMuOTQxNjcgLTUzLjc1LDMuOTQxNjdjLTIxLjg1ODMzLDAgLTQxLjU2NjY3LC0yLjE1IC01My43NSwtMy45NDE2N2MtNy41MjUsLTEuMDc1IC0xMy42MTY2NywtNi44MDgzMyAtMTUuMDUsLTE0LjMzMzMzYy0xLjQzMzMzLC04LjI0MTY3IC0yLjg2NjY3LC0yMC40MjUgLTIuODY2NjcsLTM1LjQ3NWMwLC0xNS4wNSAxLjQzMzMzLC0yNy4yMzMzMyAyLjg2NjY3LC0zNS40NzVjMS40MzMzMywtNy41MjUgNy41MjUsLTEzLjI1ODMzIDE1LjA1LC0xNC4zMzMzM2MxMS44MjUsLTEuNzkxNjcgMzEuNTMzMzMsLTMuOTQxNjcgNTMuNzUsLTMuOTQxNjdjMjIuMjE2NjcsMCA0MS41NjY2NywyLjE1IDUzLjc1LDMuOTQxNjdjNy41MjUsMS4wNzUgMTMuNjE2NjcsNi44MDgzMyAxNS4wNSwxNC4zMzMzM2MxLjQzMzMzLDguMjQxNjcgMy4yMjUsMjAuNDI1IDMuMjI1LDM1LjQ3NWMtMC4zNTgzMywxNS4wNSAtMS43OTE2NywyNy4yMzMzMyAtMy4yMjUsMzUuNDc1eiIgZmlsbD0iIzFhYmM5YyI+PC9wYXRoPjxwYXRoIGQ9Ik03MS42NjY2NywxMTEuMDgzMzN2LTUwLjE2NjY3bDQzLDI1LjA4MzMzeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" 
-          alt="youtube" 
-          title="youtube page" 
-          width="100" 
-          height="100"
-        /></a>
-    </footer>
-  </body>
 </html>

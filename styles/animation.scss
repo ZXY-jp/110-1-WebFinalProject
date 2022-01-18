@@ -1,0 +1,46 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(153, 195, 214);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  stroke-dasharray: 1024px;
+  stroke-dashoffset: 1024px;
+  animation: fadeInside 1s ease-in forwards;
+}
+#second {
+  stroke-dasharray: 9275px;
+  stroke-dashoffset: 9275px;
+  animation: fadeInside 1s ease-in forwards 1s;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #ffffff;
+  }
+}

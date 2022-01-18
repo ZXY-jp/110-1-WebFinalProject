@@ -9,15 +9,6 @@ body {
   position: relative;
 }
 
-.blueBG {
-  position: absolute;
-  top: -10vh;
-  right: 0;
-  z-index: -1;
-  width: 45vw;
-  height: 120vh;
-}
-
 header {
   nav {
     width: 100%;
@@ -38,127 +29,127 @@ header {
   }
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0.5rem;
-  section.left {
-    flex: 3 1 500px;
+// main {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0.5rem;
+//   section.left {
+//     flex: 3 1 500px;
 
-    h1 {
-      font-size: 4rem;
-      color: rgb(196, 63, 63);
-    }
-    p {
-      font-size: 1.5rem;
-      padding: 1rem 0rem;
-    }
-  }
-  section.right {
-    flex: 1 1 550px;
-    position: relative;
-    img {
-      border-radius: 70%;
-      width: 25vw;
-      height: 25vw;
+//     h1 {
+//       font-size: 4rem;
+//       color: rgb(196, 63, 63);
+//     }
+//     p {
+//       font-size: 1.5rem;
+//       padding: 1rem 0rem;
+//     }
+//   }
+//   section.right {
+//     flex: 1 1 550px;
+//     position: relative;
+//     img {
+//       border-radius: 70%;
+//       width: 25vw;
+//       height: 25vw;
 
-      position: absolute;
-      top: 35vh;
-      right: 15vw;
-      transform: translateY(-50%);
-    }
-  }
-  section.table {
-    flex: 3 1 500px;
-    padding: 2rem;
-    table {
-      border-collapse: collapse;
-      tr {
-        border-bottom: 1px solid rgb(202, 115, 144);
-        transition: all 0.2s ease;
-        td {
-          padding: 1rem;
-        }
-        &:hover {
-          background-color: rgba(176, 30, 62, 0.25);
-        }
-      }
-    }
-  }
-  section.picture {
-    flex: 1 1 580px;
-    position: relative;
-    img {
-      width: 30vw;
-    }
-    div.blueRect {
-      width: 30vw;
-      height: 75vh;
-      background-color: rgb(176, 30, 54);
-      position: absolute;
-      top: 30px;
-      left: 50px;
-      z-index: -1;
-    }
-  }
-  section.form {
-    flex: 1 1 500px;
-    form {
-      min-height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 1rem;
-      div {
-        margin: 0.5rem;
-        label {
-          font-size: 1.5rem;
-          margin-right: 1rem;
-        }
-        input,
-        textarea {
-          background-color: rgba(176, 30, 30, 0.25);
-          color: black;
-          font-size: 1.25rem;
-          padding: 0.25rem 0.25rem;
-          border: none;
-          width: 90%;
-        }
-        textarea {
-          vertical-align: top;
-        }
-      }
-      button {
-        align-self: center;
-        background-color: rgb(204, 82, 82);
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 0.5em 1.5rem;
-        font-size: 1.5rem;
-        border-radius: 20px;
-      }
-    }
-  }
+//       position: absolute;
+//       top: 35vh;
+//       right: 15vw;
+//       transform: translateY(-50%);
+//     }
+//   }
+//   section.table {
+//     flex: 3 1 500px;
+//     padding: 2rem;
+//     table {
+//       border-collapse: collapse;
+//       tr {
+//         border-bottom: 1px solid rgb(202, 115, 144);
+//         transition: all 0.2s ease;
+//         td {
+//           padding: 1rem;
+//         }
+//         &:hover {
+//           background-color: rgba(176, 30, 62, 0.25);
+//         }
+//       }
+//     }
+//   }
+//   section.picture {
+//     flex: 1 1 580px;
+//     position: relative;
+//     img {
+//       width: 30vw;
+//     }
+//     div.blueRect {
+//       width: 30vw;
+//       height: 75vh;
+//       background-color: rgb(176, 30, 54);
+//       position: absolute;
+//       top: 30px;
+//       left: 50px;
+//       z-index: -1;
+//     }
+//   }
+//   section.form {
+//     flex: 1 1 500px;
+//     form {
+//       min-height: 70vh;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-around;
+//       padding: 1rem;
+//       div {
+//         margin: 0.5rem;
+//         label {
+//           font-size: 1.5rem;
+//           margin-right: 1rem;
+//         }
+//         input,
+//         textarea {
+//           background-color: rgba(176, 30, 30, 0.25);
+//           color: black;
+//           font-size: 1.25rem;
+//           padding: 0.25rem 0.25rem;
+//           border: none;
+//           width: 90%;
+//         }
+//         textarea {
+//           vertical-align: top;
+//         }
+//       }
+//       button {
+//         align-self: center;
+//         background-color: rgb(204, 82, 82);
+//         color: white;
+//         border: none;
+//         cursor: pointer;
+//         padding: 0.5em 1.5rem;
+//         font-size: 1.5rem;
+//         border-radius: 20px;
+//       }
+//     }
+//   }
 
-  div.line {
-    background-color: rgb(176, 30, 30);
-    width: 5px;
-  }
+//   div.line {
+//     background-color: rgb(176, 30, 30);
+//     width: 5px;
+//   }
 
-  section.contact {
-    flex: 1 1 550px;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
+//   section.contact {
+//     flex: 1 1 550px;
+//     display: flex;
+//     align-items: center;
+//     padding: 2rem;
 
-    div.content {
-      h2 {
-        margin: 1rem 0rem;
-      }
-    }
-  }
-}
+//     div.content {
+//       h2 {
+//         margin: 1rem 0rem;
+//       }
+//     }
+//   }
+// }
 
 .active {
   color: rgb(30, 129, 176);

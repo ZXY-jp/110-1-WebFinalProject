@@ -9,33 +9,57 @@
     <meta name="description" content="歡迎進入Pei的網站。" />
     <title>首頁 | Pei</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- 會滾動的 bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
     <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <link rel="stylesheet" href="./styles/animation.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Pictures/header.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Pictures/header02.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Pictures/header03.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-
-    <!-- animation -->
-    <h1 class="ml14">
-        <span class="text-wrapper">
-            <span class="letters" id="second" align-items: center>這是Peggy Jiang的個人網站</span>
-            <span class="line"></span>
-        </span>
-    </h1>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-    <!--background-->
-    <!-- <img class="blueBG" src="./ICONS/background.png" alt="" /> -->
-    <img src="./Pictures/header.png" alt="時間的真理。" width="100%">
 
 
     <!--header and navbar-->
@@ -45,28 +69,42 @@
                 <li><a class="active" href="#">首頁</a></li>
                 <li><a href="resume.html">個人履歷</a></li>
                 <li><a href="contact.html">聯絡方式</a></li>
-                <li><a href="./first_project/index.html">網頁成果1</a></li>
+                <li><a href="./first_project/index.html">網頁成果</a></li>
+                <li><a href="./OOXX/index.html">自製小遊戲01</a></li>
+                <li><a href="./punch/index.html">自製小遊戲02</a></li>
+
             </ul>
         </nav>
     </header>
 
     <!--introduction and picture-->
     <main>
-        <div class="loader-inner ball-pulse"></div> 
-        <section class="left">
-            <h1>
-                你好，我是 <br />
-                Chi-Hua Tung.
-            </h1>
-            <p>
-                我是一位______。我在_____就讀_____系，最大的興趣是________。
-            </p>
-            <p>
-                過去我曾______________________。另外也有過_________經歷。因此我具備了___________專長。
-            </p>
-        </section>
-        <section class="right">
-        </section>
+        <div id="parent">
+            <div id="text">
+                <div class="container loader">
+                    <span>A</span>
+                    <span>b</span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>t</span>
+                    <span>　</span>
+                    <span>M</span>
+                    <span>e</span>
+                    <span>!</span>
+                </div>
+            </div>
+            <br>
+            <div id="aboutText">
+                <p>
+                    輔仁大學資訊工程學系在讀中。
+                </p>
+                <p>個性外向，善於傾聽，樂於合作，勇於挑戰。</p>
+                <p>甚麼都會一點，但是也甚麼都不到能吹噓的程度</p>
+                <p>技能點亂點，各領域都摸一些ヽ(́◕◞౪◟◕‵)ﾉ</p>
+            </div>
+
+
+        </div>
     </main>
 
     <!--links for facebook, instagram and youtube-->
@@ -74,18 +112,9 @@
     <footer>
         <a href="https://github.com/ZXY-jp"><img src="./ICONS/github.png" alt="github" title="my Github page"
                 width="100px" /></a>
-        <!-- <a href="https://www.instagram.com/chihuah/">
-            <img src="./ICONS/instagram.svg" alt="instagram" title="instagram page" /></a>
-        <a href="https://www.youtube.com/">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGc+PHBhdGggZD0iTTE1NC44LDEyMS40NzVjLTEuNDMzMzMsNy41MjUgLTcuNTI1LDEzLjI1ODMzIC0xNS4wNSwxNC4zMzMzM2MtMTEuODI1LDEuNzkxNjcgLTMxLjUzMzMzLDMuOTQxNjcgLTUzLjc1LDMuOTQxNjdjLTIxLjg1ODMzLDAgLTQxLjU2NjY3LC0yLjE1IC01My43NSwtMy45NDE2N2MtNy41MjUsLTEuMDc1IC0xMy42MTY2NywtNi44MDgzMyAtMTUuMDUsLTE0LjMzMzMzYy0xLjQzMzMzLC04LjI0MTY3IC0yLjg2NjY3LC0yMC40MjUgLTIuODY2NjcsLTM1LjQ3NWMwLC0xNS4wNSAxLjQzMzMzLC0yNy4yMzMzMyAyLjg2NjY3LC0zNS40NzVjMS40MzMzMywtNy41MjUgNy41MjUsLTEzLjI1ODMzIDE1LjA1LC0xNC4zMzMzM2MxMS44MjUsLTEuNzkxNjcgMzEuNTMzMzMsLTMuOTQxNjcgNTMuNzUsLTMuOTQxNjdjMjIuMjE2NjcsMCA0MS41NjY2NywyLjE1IDUzLjc1LDMuOTQxNjdjNy41MjUsMS4wNzUgMTMuNjE2NjcsNi44MDgzMyAxNS4wNSwxNC4zMzMzM2MxLjQzMzMzLDguMjQxNjcgMy4yMjUsMjAuNDI1IDMuMjI1LDM1LjQ3NWMtMC4zNTgzMywxNS4wNSAtMS43OTE2NywyNy4yMzMzMyAtMy4yMjUsMzUuNDc1eiIgZmlsbD0iIzFhYmM5YyI+PC9wYXRoPjxwYXRoIGQ9Ik03MS42NjY2NywxMTEuMDgzMzN2LTUwLjE2NjY3bDQzLDI1LjA4MzMzeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
-                alt="youtube" title="youtube page" width="100" height="100" /></a> -->
     </footer>
 </body>
+
 <script src="./app.js"></script>
-<script>
-    $(window).load(function () {
-        $('#loading').hide(100);
-    });
-</script>
 
 </html>
