@@ -57,20 +57,25 @@
     </button>
   </div>
 
-  <!--header and navbar-->
-  <header>
+   <!--header and navbar-->
+   <header>
     <nav>
-      <ul>
-        <li><a class="active" href="#">首頁</a></li>
-        <li><a href="resume.html">個人履歷</a></li>
-        <li><a href="contact.html">聯絡方式</a></li>
-        <li><a href="./first_project/index.html">網頁成果</a></li>
-        <li><a href="./OOXX/index.html">自製小遊戲01</a></li>
-        <li><a href="./punch/index.html">自製小遊戲02</a></li>
-      </ul>
-    </nav>
-  </header>
+        <ul class="drop-down-menu">
+            <li id="home"><a class="active" href="index.html">首頁</a></li>
+            <li><a href="resume.html">個人履歷</a></li>
+            <li><a href="#">聯絡方式</a></li>
+            <li> 
+                <select onchange="window.open(this.options[this.selectedIndex].value)">
+                    <option disabled selected>各類作品(另開分頁)</option>
+                    <option value="./first_project/index.html">網頁作品—輔大60周年</option>
+                    <option value="./OOXX/index.html">自製小遊戲01—井字遊戲</option>
+                    <option value="./punch/index.html">自製小遊戲02—對對碰</option>
+                </select>
+            </li>
 
+        </ul>
+    </nav>
+</header>
   <main>
     <section class="form">
       <form>
@@ -99,7 +104,6 @@
         <h2>常駐SF643</h2>
         <h2>Tel: 09XXXXXXXX</h2>
         <h2>Email: 407261221@gapp.fju.edu.tw</h2>
-        <h2>其他聯絡方式: 郵件</h2>
       </div>
     </section>
   </main>

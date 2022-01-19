@@ -58,16 +58,25 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!--header and navbar-->
+
     <nav>
-      <ul>
-        <li><a class="active" href="#">首頁</a></li>
-        <li><a href="resume.html">個人履歷</a></li>
+      <ul class="drop-down-menu">
+        <li id="home"><a class="active" href="index.html">首頁</a></li>
+        <li><a href="#">個人履歷</a></li>
         <li><a href="contact.html">聯絡方式</a></li>
-        <li><a href="./first_project/index.html">網頁成果</a></li>
-        <li><a href="./OOXX/index.html">自製小遊戲01</a></li>
-        <li><a href="./punch/index.html">自製小遊戲02</a></li>
+        <li>
+          <select onchange="window.open(this.options[this.selectedIndex].value)">
+            <option disabled selected>各類作品(另開分頁)</option>
+            <option value="./first_project/index.html">網頁作品—輔大60周年</option>
+            <option value="./OOXX/index.html">自製小遊戲01—井字遊戲</option>
+            <option value="./punch/index.html">自製小遊戲02—對對碰</option>
+          </select>
+        </li>
+
       </ul>
     </nav>
+
   </header>
 
   <main>
@@ -128,13 +137,15 @@
         <tr>
           <td> <a href="https://github.com/ZXY-jp"><img src="./ICONS/icons8-github.svg" alt="github"
                 title="my Github page" width="270px" class="pic" /></a></td>
+        </tr>
+<tr>
           <td><a href="mailto:407261221@gapp.fju.edu.tw"><img src="./ICONS/icons8-gmail-logo.svg" alt="Mail"
                 title="Contact me!" width="270px" class="pic" /></a></td>
           </td>
-
-          </td>
         </tr>
 
+        
+        
       </table>
 
     </section>

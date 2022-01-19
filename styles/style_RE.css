@@ -12,43 +12,51 @@ body {
   align-items: center;
 }
 
+
 header nav {
   width: 100%;
+  height: fit-content;
   background: linear-gradient(
     to bottom,
     rgb(255, 255, 255),
     rgba(197, 223, 236, 0.856)
   );
+
 }
 
 header nav ul {
-  border-radius: 20%;
-  width: 75%;
+  width: 60vw;
   display: flex;
   list-style-type: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
 
-header nav ul li:hover {
-  transition: 1s;
-  background: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255),
-    rgba(138, 198, 228, 0.856)
-  );
 }
 
 header nav ul li {
-  font-size: 1.25rem;
-  padding: 1rem 4rem 1rem 4rem;
+  font-size: 18px;
+  padding: 1rem;
+  transition: all 0.3s linear;
 }
 
 header nav ul li a {
   color: black;
   text-decoration: none;
+  display: flex;
 }
+
+header nav ul li:hover {
+  transition: 0.5s;
+  background-color: #50b2cf70;
+  height: fit-content;
+}
+
+select, select.active{
+  background-color: rgba(255, 255, 255, 0.014);
+  border-style: none;
+}
+
 
 main {
   display: flex;
@@ -66,6 +74,7 @@ main section.table {
 
 main section.table table {
   border-collapse: collapse;
+  width: 60vw;
 }
 
 main section.table table tr {
@@ -94,10 +103,7 @@ main section.herf {
   color: #1e81b0;
 }
 
-@media screen and (max-width: 1100px) {
-  .blueBG {
-    opacity: 0.7;
-  }
+@media screen and (max-width: 800px) {
   header nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -108,41 +114,39 @@ main section.herf {
     padding: 0.5rem 0rem;
     border-bottom: 2px solid gray;
   }
+  .pic{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
-  main section.right img {
-    position: static;
-    -webkit-transform: none;
-    transform: none;
-    width: 30vw;
-    height: 30vw;
+
+@keyframes bubble{
+  0%{
+    transform: scale(0.7, 0.7);
   }
-  main section.picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  30%{
+    transform: scale(1, 1);
   }
-  main section.picture img {
-    width: 50vw;
-  }
-  main section.picture div.blueRect {
-    display: none;
+  100%{
+    transform: scale(0.7, 0.7);
+
   }
 }
 
 .pic {
   transition: 0.75s;
-
-  border-radius: 50%;
+  animation: bubble 5s infinite;
+  display: block;
+  padding: 1rem;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  margin: 10px;
 }
 .pic:hover {
-  transform: scale(1.2, 1.2);
-  transition: 0.75s;
+  border: black 1px solod;
 }
 
 footer a {

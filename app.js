@@ -1,5 +1,3 @@
-const text = document.querySelectorAll(".paths");
-
 for (let i = 0; i < text.length; i++) {
   console.log(`text number ${i} length is ${text[i].getTotalLength()}`);
 }
@@ -13,3 +11,9 @@ lastWord.addEventListener("animationend", () => {
   animation.style =
     "transition: all 1s ease; opacity: 0; pointer-events: none;";
 });
+
+function setsubmit() {
+  if (myWorks.value == 0) window.location = "http://www.google.com";
+  if (myWorks.value == 1) window.location = "http://www.163.com";
+  if (myWorks.value == 2) window.location = "http://www.sina.com";
+}
