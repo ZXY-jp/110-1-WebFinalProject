@@ -23,12 +23,13 @@ header nav {
 }
 
 header nav ul {
-  width: 60vw;
+  width: 50%;
   display: flex;
   list-style-type: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: auto;
 }
 
 header nav ul li {
@@ -49,20 +50,21 @@ header nav ul li:hover {
   height: fit-content;
 }
 
-select {
-  background-color: rgba(63, 111, 155, 0);
+select,
+select.active {
+  background-color: rgba(255, 255, 255, 0.014);
   border-style: none;
-  height: auto;
 }
 
 main {
+  animation: login 2s 1;
   justify-content: center;
   align-items: center;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 1rem;
-  padding: 3rem;
+  margin: 0.87rem;
+  padding: 0.8rem;
   height: 100%;
 }
 main div {
@@ -157,10 +159,20 @@ main div p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: 0%;
   }
   header nav ul li {
     padding: 0.5rem 0rem;
     border-bottom: 2px solid gray;
+  }
+}
+
+@keyframes login {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

@@ -21,12 +21,13 @@ header nav {
 }
 
 header nav ul {
-  width: 60vw;
+  width: 50%;
   display: flex;
   list-style-type: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: auto;
 }
 
 header nav ul li {
@@ -54,6 +55,7 @@ select.active {
 }
 
 main {
+  animation: login 2s 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +175,20 @@ main section.contact div.content h2 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: 0%;
   }
   header nav ul li {
     padding: 0.5rem 0rem;
     border-bottom: 2px solid gray;
+  }
+}
+
+@keyframes login {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

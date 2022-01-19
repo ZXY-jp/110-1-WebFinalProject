@@ -23,12 +23,13 @@ header nav {
 }
 
 header nav ul {
-  width: 60vw;
+  width: 50%;
   display: flex;
   list-style-type: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: auto;
 }
 
 header nav ul li {
@@ -56,6 +57,7 @@ select.active {
 }
 
 main {
+  animation: login 2s 1;
   display: flex;
   margin: 0.5rem;
   align-items: center;
@@ -108,6 +110,7 @@ main section.herf {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: 0%;
   }
   header nav ul li {
     padding: 0.5rem 0rem;
@@ -132,7 +135,14 @@ main section.herf {
     transform: scale(0.7, 0.7);
   }
 }
-
+@keyframes login {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .pic {
   transition: 0.75s;
   animation: bubble 5s infinite;
