@@ -9,7 +9,7 @@
 
 body {
   position: relative;
-  background-color: rgb(236, 246, 250);
+  background-color: #e2f0fc;
 }
 
 header nav {
@@ -20,7 +20,6 @@ header nav {
     rgb(255, 255, 255),
     rgba(197, 223, 236, 0.856)
   );
-
 }
 
 header nav ul {
@@ -30,7 +29,6 @@ header nav ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
 }
 
 header nav ul li {
@@ -51,11 +49,11 @@ header nav ul li:hover {
   height: fit-content;
 }
 
-select, select.active{
-  background-color: rgba(255, 255, 255, 0.014);
+select {
+  background-color: rgba(63, 111, 155, 0);
   border-style: none;
+  height: auto;
 }
-
 
 main {
   justify-content: center;
@@ -164,7 +162,6 @@ main div p {
     padding: 0.5rem 0rem;
     border-bottom: 2px solid gray;
   }
-
 }
 
 footer a {
@@ -175,5 +172,5 @@ footer a {
 }
 #aboutText {
   padding: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffffed;
 }

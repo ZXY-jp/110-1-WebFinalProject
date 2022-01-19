@@ -12,7 +12,6 @@ body {
   align-items: center;
 }
 
-
 header nav {
   width: 100%;
   height: fit-content;
@@ -21,7 +20,6 @@ header nav {
     rgb(255, 255, 255),
     rgba(197, 223, 236, 0.856)
   );
-
 }
 
 header nav ul {
@@ -31,7 +29,6 @@ header nav ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
 }
 
 header nav ul li {
@@ -52,15 +49,17 @@ header nav ul li:hover {
   height: fit-content;
 }
 
-select, select.active{
+select,
+select.active {
   background-color: rgba(255, 255, 255, 0.014);
   border-style: none;
 }
 
-
 main {
   display: flex;
   margin: 0.5rem;
+  align-items: center;
+  padding: 0vw 2vw 2vw 2vw;
 }
 
 main section.table {
@@ -72,7 +71,7 @@ main section.table {
   padding: 2rem;
 }
 
-main section.table table {
+main section table {
   border-collapse: collapse;
   width: 60vw;
 }
@@ -88,7 +87,7 @@ main section.table table tr td {
 }
 
 main section.table table tr:hover {
-  background-color: rgba(126, 192, 204, 0.486);
+  background-color: rgba(126, 175, 204, 0.39);
 }
 
 main section.herf {
@@ -114,7 +113,7 @@ main section.herf {
     padding: 0.5rem 0rem;
     border-bottom: 2px solid gray;
   }
-  .pic{
+  .pic {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -122,17 +121,15 @@ main section.herf {
   }
 }
 
-
-@keyframes bubble{
-  0%{
+@keyframes bubble {
+  0% {
     transform: scale(0.7, 0.7);
   }
-  30%{
+  30% {
     transform: scale(1, 1);
   }
-  100%{
+  100% {
     transform: scale(0.7, 0.7);
-
   }
 }
 

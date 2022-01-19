@@ -7,7 +7,7 @@
   <meta name="author" content="Wilson Ren" />
   <meta name="robots" content="index, follow" />
   <meta name="description" content="哈囉，我是Pei" />
-  <title>聯絡方式 | Chihuah</title>
+  <title>聯絡方式 | Pei</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
   <!-- bootstrap -->
@@ -57,48 +57,50 @@
     </button>
   </div>
 
-   <!--header and navbar-->
-   <header>
+  <!--header and navbar-->
+  <header>
     <nav>
-        <ul class="drop-down-menu">
-            <li id="home"><a class="active" href="index.html">首頁</a></li>
-            <li><a href="resume.html">個人履歷</a></li>
-            <li><a href="#">聯絡方式</a></li>
-            <li> 
-                <select onchange="window.open(this.options[this.selectedIndex].value)">
-                    <option disabled selected>各類作品(另開分頁)</option>
-                    <option value="./first_project/index.html">網頁作品—輔大60周年</option>
-                    <option value="./OOXX/index.html">自製小遊戲01—井字遊戲</option>
-                    <option value="./punch/index.html">自製小遊戲02—對對碰</option>
-                </select>
-            </li>
+      <ul class="drop-down-menu">
+        <li id="home"><a href="index.html">首頁</a>
+        </li>
+        <li><a href="resume.html">個人履歷</a></li>
+        <li><a href="#" class="active">聯絡方式</a></li>
+        <li>
+          <select onchange="window.open(this.options[this.selectedIndex].value)">
+            <option disabled selected>各類作品(另開分頁)</option>
+            <option value="./first_project/index.html">網頁作品—輔大60周年</option>
+            <option value="./OOXX/index.html">自製小遊戲01—井字遊戲</option>
+            <option value="./punch/index.html">自製小遊戲02—對對碰</option>
+          </select>
+        </li>
 
-        </ul>
+      </ul>
     </nav>
-</header>
+  </header>
   <main>
     <section class="form">
       <form>
         <div>
-          <label for="name">姓名:</label>
+          <label for="name">　　姓名:</label>
           <input type="text" name="name" />
         </div>
         <div>
-          <label for="email">郵件:</label>
+          <label for="email">　　郵件:</label>
           <input type="email" name="email" />
         </div>
         <div>
-          <label for="phone">電話:</label>
+          <label for="phone">　　電話:</label>
           <input type="text" name="phone" />
         </div>
         <div>
-          <label for="question">問題詢問:</label>
-          <textarea name="question" id="question" rows="8"></textarea>
+          <label for="question">　　留言:</label>
+          <textarea name="question" id="question" rows="7"></textarea>
         </div>
         <button type="submit">提交表單</button>
       </form>
     </section>
     <div class="line"></div>
+
     <section class="contact">
       <div class="content">
         <h2>常駐SF643</h2>
